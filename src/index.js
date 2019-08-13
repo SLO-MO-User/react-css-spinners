@@ -1,5 +1,11 @@
-import React from "react";
-
-const Spinner = props => <h1>Spinner</h1>;
-
-export default Spinner;
+export * from "./Circle";
+export * from "./DualRing";
+export * from "./Ellipsis";
+export * from "./Facebook";
+export * from "./Grid";
+export * from "./Heart";
+export * from "./Hourglass";
+export * from "./Ring";
+export * from "./Ripple";
+export * from "./Roller";
+export * from "./Spinner";
