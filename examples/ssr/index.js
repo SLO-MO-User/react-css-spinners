@@ -1,22 +1,50 @@
-const { createElement } = require("react");
-const { renderToString } = require("react-dom/server");
 const express = require("express");
+const { createElement, Fragment } = require("react");
+const { renderToString } = require("react-dom/server");
+const {
+  Circle,
+  DualRing,
+  Ellipsis,
+  Facebook,
+  Grid,
+  Heart,
+  Hourglass,
+  Ring,
+  Ripple,
+  Roller,
+  Spinner
+} = require("react-css-spinners");
 
-const { Ring } = require("react-css-spinners");
-
-const port = 3000;
+const port = 5000;
 const app = express();
 
-app.get("*", (req, res) => {
-  const html = renderToString(createElement(Ring));
+const html = renderToString(
+  createElement(
+    Fragment,
+    null,
+    createElement(Ring),
+    createElement(Circle),
+    createElement(DualRing),
+    createElement(Ellipsis),
+    createElement(Facebook),
+    createElement(Grid),
+    createElement(Heart),
+    createElement(Hourglass),
+    createElement(Ring),
+    createElement(Ripple),
+    createElement(Roller),
+    createElement(Spinner)
+  )
+);
 
+app.get("*", (req, res) => {
   res.send(`
     <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
     </head>
-    <body>
+    <body style="background-color: black">
         ${html}
     </body>
     </html>

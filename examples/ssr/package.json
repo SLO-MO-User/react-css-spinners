@@ -1,15 +1,18 @@
 {
   "name": "ssr",
   "version": "1.0.0",
-  "private": true,
+  "description": "Minimal demo of the spinners with server-side rendering using CJS bundle",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "dependencies": {
-    "express": "latest",
-    "react": "latest",
+    "express": "^4.17.1",
+    "react": "^16.9.0",
     "react-css-spinners": "file:../..",
-    "react-dom": "latest"
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
