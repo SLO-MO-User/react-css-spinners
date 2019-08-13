@@ -3,7 +3,7 @@ import styles from "./styles.css";
 
 const Hourglass = props => (
   <>
-    <style>{styles}</style>
+    <style>{`${styles}`}</style>
     <div className="lds-hourglass" />
   </>
 );

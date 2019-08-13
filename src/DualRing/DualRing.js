@@ -3,7 +3,7 @@ import styles from "./styles.css";
 
 const DualRing = props => (
   <>
-    <style>{styles}</style>
+    <style>{`${styles}`}</style>
     <div className="lds-dual-ring" />
   </>
 );

@@ -11,7 +11,6 @@ const {
   Hourglass,
   Ring,
   Ripple,
-  Roller,
   Spinner
 } = require("react-css-spinners");
 
@@ -32,7 +31,6 @@ const html = renderToString(
     createElement(Hourglass),
     createElement(Ring),
     createElement(Ripple),
-    createElement(Roller),
     createElement(Spinner)
   )
 );
@@ -44,8 +42,11 @@ app.get("*", (req, res) => {
     <head>
         <meta charset="UTF-8">
     </head>
-    <body style="background-color: black">
-        ${html}
+    <body>
+        
+    <div>${html}</div>
+    <a href="https://loading.io/">powered by loading.io</a>
+
     </body>
     </html>
   `);

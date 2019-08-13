@@ -3,7 +3,7 @@ import styles from "./styles.css";
 
 const Circle = props => (
   <>
-    <style>{styles}</style>
+    <style>{`${styles}`}</style>
     <div className="lds-ellipsis">
       <div />
       <div />

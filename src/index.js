@@ -7,5 +7,4 @@ export * from "./Heart";
 export * from "./Hourglass";
 export * from "./Ring";
 export * from "./Ripple";
-export * from "./Roller";
 export * from "./Spinner";

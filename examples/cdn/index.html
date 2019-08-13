@@ -7,12 +7,12 @@
     <title>CDN Example</title>
 </head>
 <body>
-    <div id="container" style="background-color: black"></div>
+    <div id="container"></div>
     <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
     <script src="./node_modules/react-css-spinners/dist/bundle.umd.js"></script>
     <script>
-            const {Circle, DualRing, Ellipsis, Facebook, Grid, Heart, Hourglass, Ring, Ripple, Roller, Spinner} = window.ReactCssSpinners 
+            const {Circle, DualRing, Ellipsis, Facebook, Grid, Heart, Hourglass, Ring, Ripple, Spinner} = window.ReactCssSpinners 
             const container = document.getElementById('container')
             const Container = React.createElement(
                 React.Fragment,
@@ -26,7 +26,6 @@
                 React.createElement(Hourglass),
                 React.createElement(Ring),
                 React.createElement(Ripple),
-                React.createElement(Roller),
                 React.createElement(Spinner)
             )
             ReactDOM.render(
@@ -34,5 +33,6 @@
                 container
             )
         </script>
+        <a href="https://loading.io/">powered by loading.io</a>
 </body>
 </html>

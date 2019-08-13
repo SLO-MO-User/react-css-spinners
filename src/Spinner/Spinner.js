@@ -3,7 +3,7 @@ import styles from "./styles.css";
 
 const Spinner = props => (
   <>
-    <style>{styles}</style>
+    <style>{`${styles}`}</style>
     <div className="lds-spinner">
       <div />
       <div />

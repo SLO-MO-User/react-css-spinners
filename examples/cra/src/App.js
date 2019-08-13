@@ -8,19 +8,13 @@ import {
   Hourglass,
   Circle,
   Heart,
-  Roller,
   Spinner,
   Ripple
 } from "react-css-spinners";
 
 function App() {
   return (
-    <div
-      style={{
-        backgroundColor: "#111",
-        textAlign: "center"
-      }}
-    >
+    <>
       <Ellipsis />
       <Ring />
       <DualRing />
@@ -30,9 +24,9 @@ function App() {
       <Circle />
       <Heart />
       <Ripple />
-      <Roller />
       <Spinner />
-    </div>
+      <a href="https://loading.io/">powered by loading.io</a>
+    </>
   );
 }
 
