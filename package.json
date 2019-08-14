@@ -16,7 +16,9 @@
     "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test:staged": "jest --findRelatedTests",
     "storybook": "start-storybook -p 9001 -c storybook",
-    "storybook:build": "build-storybook -c storybook"
+    "storybook:build": "build-storybook -c storybook",
+    "predeploy": "npm run storybook:build",
+    "deploy": "gh-pages -d storybook-static"
   },
   "husky": {
     "hooks": {
@@ -44,7 +46,7 @@
   "bugs": {
     "url": "https://github.com/SLO-MO-User/react-css-spinners/issues"
   },
-  "homepage": "https://github.com/SLO-MO-User/react-css-spinners#readme",
+  "homepage": "https://slo-mo-user.github.io/react-css-spinners/",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
@@ -63,6 +65,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-standard": "^4.0.0",
+    "gh-pages": "^2.1.1",
     "husky": "^3.0.3",
     "jest": "^24.8.0",
     "lint-staged": "^9.2.1",
