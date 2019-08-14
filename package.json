@@ -8,7 +8,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup -c",
-    "lint": "eslint '**/*.js'",
+    "lint": "eslint **/*.js",
     "lint:fix": "prettier-eslint **/*.js --write",
     "test": "jest",
     "test:watch": "jest --watch",
